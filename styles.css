@@ -32,25 +32,32 @@ body {
   
   .navbar__links {
     display: flex;
-    gap: 20px;
+    flex-wrap: wrap;
+    gap: 50px;
     font-size: 18px;
     margin-top: 10px;
+    list-style: none;
   }
-  
-  .navbar__links a {
+
+  .navbar__links li {
     text-decoration: none;
     color: #5f2b5c; /* Morado tenue */
     font-weight: bold;
     background-color: #fff;
     padding: 8px 20px;
     border-radius: 30px;
-    transition: background-color 0.3s ease, transform 0.3s ease;
+    transition:ease-in-out 0.3s;
   }
   
-  .navbar__links a:hover {
+  .navbar__links a {
+    text-decoration: none;
+    color: #5f2b5c;
+  }
+
+  .navbar__links li:hover {
+    transform: scale(1.1);
     background-color: #e7a0b6; /* Rosa más intenso */
     color: white;
-    transform: scale(1.1);
   }
   
   /* Hero Section */
