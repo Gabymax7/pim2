@@ -1,4 +1,3 @@
-/* Estilos Generales */
 body {
   font-family: 'Arial', sans-serif;
   margin: 0;
@@ -55,7 +54,7 @@ body {
 }
 
 .hero {
-  background-image: url('Recursos/fondo\ hero.jpg');
+  background-image: url('recursos/fondo\ hero.jpg');
   background-size: 1600px 1600px;
   background-position: center;
   background-attachment: fixed;
@@ -79,24 +78,33 @@ body {
   display: inline-block;
   border-style: solid;
   color: #ffffff;
-  /* Morado tenue */
-  margin-bottom: 50px;
-  margin-top: -40px;
+  margin-bottom: 20px;
+  margin-top: -60px;
   max-width: 90%;
   word-wrap: break-word;
 }
-
-/* Agregar media query para pantallas pequeñas */
 @media (max-width: 768px) {
   .hero__content h1 {
     font-size: 40px;
-    /* Reduce el tamaño de fuente en pantallas pequeñas */
     padding: 5px;
-    margin: 20px auto;
-    /* Centra el elemento horizontalmente */
+    margin: -70px auto 20px auto;
     width: 90%;
-    /* Ajusta el ancho */
   }
+}
+.hero__logo {
+  width: 500px;
+  height: auto;
+  margin: 0 auto;
+  display: block;
+  filter:drop-shadow(0 0 0.75rem #ffffff);
+}
+
+@media (max-width: 768px) {
+  .hero__logo {
+    width: 300px;
+    height: auto;
+  }
+  
 }
 
 .hero__content p {
@@ -115,7 +123,7 @@ body {
   .hero__content p {
     font-size: 18px;
     padding: 5px;
-    margin-top: 60px;
+    margin-top: 4px;
     width: 90%;
     
   }
@@ -129,20 +137,18 @@ body {
   border-radius: 30px;
   text-decoration: none;
   font-weight: bold;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.2s ease-in-out;
 
 }
 @media (max-width: 768px) {
   .hero__content .btn {
     font-size: 24px;
-    
-    /* Reduce el tamaño del botón en pantallas pequeñas */
   }
 }
 .hero__content .btn:hover {
-  background-color: #5f2b5c;
-  /* Morado oscuro */
-  transform: scale(1.1);
+  background-color: #b34b6c;
+  transform: translateY(-5px);
+  box-shadow: #ffffff 0px 0px 10px 4px;
 }
 
 /* Productos Destacados */
@@ -178,7 +184,7 @@ body {
 
 .producto:hover {
   transform: translateY(-10px);
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.8);
 }
 
 .producto img {
