@@ -54,7 +54,7 @@ body {
 }
 
 .hero {
-  background-image: url('recursos/fondo\ hero.jpg');
+  background-image: url('recursos/fondo hero.jpg');
   background-size: 1600px 1600px;
   background-position: center;
   background-attachment: fixed;
@@ -92,7 +92,7 @@ body {
   }
 }
 .hero__logo {
-  width: 500px;
+  max-width: 500px;
   height: auto;
   margin: 0 auto;
   display: block;
